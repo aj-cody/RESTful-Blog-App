@@ -1,7 +1,7 @@
 # RESTful-Blog-App
 A blog web app made to show usage of all 7 RESTful routes.
 
-It is web blog app where you can **create, edit, delete and retrieve (see)** all the blogs made.
+It is web blog app where you can **Create, Read (see), Update and Delete -> CRUD operations** all the blogs made.
 
 It is made using *JavaScript, Embedded JavaScript (EJS), MongoDB, HTML, CSS and Semantic-UI*.
 
