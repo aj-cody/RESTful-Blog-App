@@ -22,6 +22,6 @@ Go to the browser and type: **localhost:4000**
 
 Your blog web app has started.
 
-![Starting Page](/images/logo.png)
+![Starting Page](https://github.com/aj-cody/RESTful-Blog-App/blob/master/public/Blog.JPG)
 
-Happy Blogging!
+**Happy Blogging!**
