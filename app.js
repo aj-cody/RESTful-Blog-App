@@ -6,7 +6,10 @@ var express = require("express"),
     expressSanitizer = require("express-sanitizer");
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/blog_app", { useNewUrlParser: true });
+var url = process.env.DATABASEURLBLOGAPP || "mongodb://localhost:27017/blog_app";
+
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -104,6 +107,10 @@ app.delete("/blogs/:id", function (req, res) {
     });
 });
 
-app.listen(4000, function (req, res) {
+// Setup server port
+var port = process.env.PORT || 4000;
+
+
+app.listen(port, function (req, res) {
     console.log("Blog App has Started!!");
 });
